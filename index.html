@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<>, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>My first HTML form</h1>
     <button>Press me</button>
-</body>
+  </body>
+  <script>
+    const btn = document.querySelector("button"); btn.addEventListener("click",
+    () => { btn.textContent = "YOU CLICKED ME!! ❤️"; setTimeout(() => {
+    btn.textContent = "Press me"; }, 1000); });
+  </script>
 </html>
